@@ -3,7 +3,7 @@ import { Inter, Ubuntu } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["500"] });
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Sashank Ghimire",
@@ -17,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.className} h-screen`}>{children}</body>
+      <body
+        className={`${ubuntu.className} h-screen bg-[url(/wall.jpg)] bg-auto bg-center antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
