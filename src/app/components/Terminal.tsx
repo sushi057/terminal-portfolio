@@ -6,11 +6,14 @@ import { useState } from "react";
 
 export default function Terminal() {
   const [command, setCommand] = useState("");
+  const [commandHistory, setCommandHistory] = useState<string[]>([]);
   const [newCommand, setNewCommand] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setNewCommand(command);
+    setCommandHistory([...commandHistory, command]);
+    setCommand("");
   };
   return (
     <div className="flex h-1/2 w-full flex-col bg-[#2C001E]/90 p-1 text-white">
@@ -26,7 +29,7 @@ export default function Terminal() {
         />
       </form>
       <section className="flex-1 overflow-auto">
-        <Output command={newCommand} />
+        {newCommand && <Output command={newCommand} />}
       </section>
     </div>
   );
