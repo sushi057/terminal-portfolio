@@ -40,7 +40,9 @@ export default function Terminal() {
       </section>
       <form onSubmit={(e) => handleSubmit(e)} className="flex flex-row">
         <p className="mr-auto min-w-fit text-green-500">
-          sushi@linux-desktop<span>:~$</span>
+          shawshank@desktop<span className="text-white">:</span>:
+          <span className="text-[#06989A]">~</span>
+          <span className="text-white">$</span>
         </p>
         <input
           id="commandline"
@@ -48,7 +50,7 @@ export default function Terminal() {
           type="text"
           value={command}
           onChange={(e) => setCommand(e.target.value)}
-          className="ml-2 w-full bg-inherit outline-none"
+          className="ml-1.5 w-full bg-inherit text-[#D3D7CF] outline-none"
         />
       </form>
     </div>

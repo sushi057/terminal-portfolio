@@ -21,12 +21,12 @@ export default function About() {
           <li>github</li>
         </ul>
         <ul>
-          <li className="text-blue-500 hover:underline">
+          <li className="text-cyan-500 hover:underline">
             <Link href="mailto: redemption8848@gmail.com" target="_blank">
               redemption8848@gmail.com
             </Link>
           </li>
-          <li className="text-blue-500 hover:underline">
+          <li className="text-cyan-500 hover:underline">
             <Link
               href="https://www.linkedin.com/in/shashank-ghimire-b51759199"
               target="_blank"
@@ -34,7 +34,7 @@ export default function About() {
               linkedin/shashank-ghimire
             </Link>
           </li>
-          <li className="text-blue-500 hover:underline">
+          <li className="text-cyan-500 hover:underline">
             <Link href="https://github.com" target="_blank">
               github.com/shashank
             </Link>

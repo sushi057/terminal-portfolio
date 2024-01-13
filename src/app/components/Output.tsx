@@ -14,7 +14,12 @@ export default function Output({ command }: { command: string }) {
   return (
     <div className="mr-16">
       <p className="mr-auto min-w-fit text-green-500">
-        sushi@linux-desktop:~$<span className="ml-2 text-white">{command}</span>
+        <p className="mr-auto min-w-fit text-green-500">
+          shawshank@desktop<span className="text-white">:</span>:
+          <span className="text-[#06989A]">~</span>
+          <span className="mr-1.5 text-white">$</span>
+          <span className="text-cyan-500 ">{command}</span>
+        </p>
       </p>
       {command && (
         <div>

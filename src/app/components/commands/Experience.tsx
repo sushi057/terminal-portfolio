@@ -47,16 +47,16 @@ export default function Experience() {
         <section key={uuidv4()} className="mt-6">
           <div>
             <div className="flex justify-between">
-              <h3>
+              <div className="text-cyan-500">
                 <p>{item.company}</p>
                 <p>{item.location}</p>
-              </h3>
-              <div>
+              </div>
+              <div className="text-cyan-500">
                 <p>{item.position}</p>
                 <p>{item.duration}</p>
               </div>
             </div>
-            <ul>
+            <ul className="ml-2 text-gray-50">
               {item.duties.map((duty) => (
                 <li key={uuidv4()}> - {duty}</li>
               ))}
