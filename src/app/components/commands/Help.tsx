@@ -19,7 +19,7 @@ export default function Help() {
           <li>neofetch</li>
           <li>clear</li>
         </ul>
-        <ul>
+        <ul className="text-[#D3D7CF]">
           <li>show available commands</li>
           <li>get to know more about me</li>
           <li>explore my professional journey</li>

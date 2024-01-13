@@ -4,7 +4,7 @@ import Terminal from "./components/Terminal";
 export default function Home() {
   return (
     <div className="mx-auto flex h-full cursor-default flex-col items-start justify-center px-8 lg:w-1/2">
-      <header className="flex w-full flex-row justify-between rounded-t-md border-t-2 border-[#2E3436] bg-gray-800 text-white">
+      <header className="flex w-full flex-row justify-between rounded-t-md border-t-2 border-gray-800 bg-gray-800 text-white shadow-xl">
         <p className="mx-auto py-2 pl-12 text-center text-sm">
           shawshank@desktop: ~
         </p>

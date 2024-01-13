@@ -32,7 +32,7 @@ export default function Terminal() {
   }, [commandHistory]);
 
   return (
-    <div className="flex h-1/2 w-full flex-col overflow-auto rounded-b-md bg-[#300A24]/95 p-0.5 text-white">
+    <div className="flex h-1/2 w-full flex-col overflow-auto rounded-b-md bg-[#300A24]/95 p-0.5 text-white drop-shadow-xl">
       <section>
         {commandHistory.map((cmd) => (
           <Output key={uuidv4()} command={cmd} />
@@ -50,7 +50,7 @@ export default function Terminal() {
           type="text"
           value={command}
           onChange={(e) => setCommand(e.target.value)}
-          className="ml-1.5 w-full bg-inherit text-[#D3D7CF] outline-none focus:h-full"
+          className="ml-1.5 w-full bg-inherit  outline-none focus:h-full"
           autoFocus
         />
       </form>
