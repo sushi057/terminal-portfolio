@@ -1,5 +1,7 @@
 "use client";
 
+import { v4 as uuidv4 } from "uuid";
+
 import React, { useEffect } from "react";
 import Output from "./Output";
 import { useState, useRef } from "react";
@@ -31,7 +33,7 @@ export default function Terminal() {
     <div className="flex h-1/2 w-full flex-col overflow-auto bg-[#2C001E]/90 p-1 text-white">
       <section>
         {commandHistory.map((cmd) => (
-          <Output key={cmd} command={cmd} />
+          <Output key={uuidv4()} command={cmd} />
         ))}
       </section>
       <form onSubmit={(e) => handleSubmit(e)} className="flex flex-row">
