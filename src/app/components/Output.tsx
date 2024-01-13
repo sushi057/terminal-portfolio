@@ -64,6 +64,9 @@ export default function Output({ command }: { command: string }) {
               case "resume":
                 return <p>Downloading Resume.........</p>;
 
+              case "blogs":
+                return <p>Redirecting you to the blogs....</p>;
+
               default:
                 return (
                   <p>{`Command '${command}' not found, type 'help' to see all commands.`}</p>
