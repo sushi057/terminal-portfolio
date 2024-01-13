@@ -17,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head></head>
       <body
-        className={`${ubuntu.className} h-screen bg-[url(/wall.jpg)] bg-auto bg-center antialiased`}
+        className={`${ubuntu.className} h-screen bg-[url(/wall.jpg)] bg-auto bg-center leading-6`}
       >
         {children}
       </body>

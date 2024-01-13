@@ -2,9 +2,9 @@
 
 import { v4 as uuidv4 } from "uuid";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Output from "./Output";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Terminal() {
   const [command, setCommand] = useState("");
@@ -24,13 +24,15 @@ export default function Terminal() {
 
   useEffect(() => {
     //Scroll to the input element
-    if (inputRef.current) {
-      inputRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    setTimeout(() => {
+      if (inputRef.current) {
+        inputRef.current.scrollIntoView({ behavior: "instant" });
+      }
+    }, 150);
   }, [commandHistory]);
 
   return (
-    <div className="flex h-1/2 w-full flex-col overflow-auto bg-[#2C001E]/90 p-1 text-white">
+    <div className="flex h-1/2 w-full flex-col overflow-auto bg-[#2C001E]/95 p-0.5 text-white">
       <section>
         {commandHistory.map((cmd) => (
           <Output key={uuidv4()} command={cmd} />

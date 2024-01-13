@@ -23,7 +23,7 @@ export default function About() {
         <ul>
           <li className="text-blue-500 hover:underline">
             <Link href="mailto: redemption8848@gmail.com" target="_blank">
-              open mail
+              redemption8848@gmail.com
             </Link>
           </li>
           <li className="text-blue-500 hover:underline">
@@ -35,7 +35,7 @@ export default function About() {
             </Link>
           </li>
           <li className="text-blue-500 hover:underline">
-            <Link href="github.com" target="_blank">
+            <Link href="https://github.com" target="_blank">
               github.com/shashank
             </Link>
           </li>

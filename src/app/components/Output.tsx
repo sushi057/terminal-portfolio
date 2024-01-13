@@ -7,7 +7,7 @@ import Skills from "./commands/Skills";
 
 export default function Output({ command }: { command: string }) {
   return (
-    <>
+    <div className="mr-16">
       <p className="mr-auto min-w-fit text-green-500">
         sushi@linux-desktop:~$<span className="ml-2 text-white">{command}</span>
       </p>
@@ -24,8 +24,8 @@ export default function Output({ command }: { command: string }) {
               case "certificates":
                 return <Certificates />;
 
-              // case "neofetch":
-              //   return <Neofetch />;
+              case "neofetch":
+                return <Neofetch />;
 
               case "skills":
                 return <Skills />;
@@ -33,8 +33,18 @@ export default function Output({ command }: { command: string }) {
               case "experience":
                 return <Experience />;
 
-              case "repo":
+              case "repo": {
+                setTimeout(() => {
+                  window.open(
+                    "https://github.com/sushi057/terminal-portfolio",
+                    "_blank",
+                  );
+                }, 2000);
+
                 return <p>Redirecting you to repo....</p>;
+              }
+              case "resume":
+                return <p>Downloading Resume........</p>;
 
               default:
                 return (
@@ -44,31 +54,6 @@ export default function Output({ command }: { command: string }) {
           })()}
         </div>
       )}
-    </>
+    </div>
   );
-
-  // switch (command) {
-  //   case "clear":
-  //     return <></>;
-
-  //   case "help":
-  //     return <Help />;
-
-  //   case "about":
-  //     return <About />;
-
-  //   case "projects":
-  //     return <Projects />;
-
-  //   case "neofetch":
-  //     return <Neofetch />;
-
-  //   case "repo":
-  //     return <p>Redirecting you to repo....</p>;
-
-  //   default:
-  //     return (
-  //       <p>{`Command '${command}' not found, type 'help' to see all commands.`}</p>
-  //     );
-  // }
 }
