@@ -1,7 +1,9 @@
 import About from "./commands/About";
 import Help from "./commands/Help";
 import Neofetch from "./commands/Neofetch";
-import Projects from "./commands/Projects";
+import Certificates from "./commands/Certificates";
+import Experience from "./commands/Experience";
+import Skills from "./commands/Skills";
 
 export default function Output({ command }: { command: string }) {
   return (
@@ -13,20 +15,23 @@ export default function Output({ command }: { command: string }) {
         <div>
           {(() => {
             switch (command) {
-              // case "clear":
-              //   return null;
-
               case "help":
                 return <Help />;
 
               case "about":
                 return <About />;
 
-              case "projects":
-                return <Projects />;
+              case "certificates":
+                return <Certificates />;
 
-              case "neofetch":
-                return <Neofetch />;
+              // case "neofetch":
+              //   return <Neofetch />;
+
+              case "skills":
+                return <Skills />;
+
+              case "experience":
+                return <Experience />;
 
               case "repo":
                 return <p>Redirecting you to repo....</p>;

@@ -4,18 +4,22 @@ export default function Help() {
       <ul>
         <li>help</li>
         <li>about</li>
-        <li>projects</li>
+        <li>experience</li>
+        <li>skills</li>
+        <li>certificates</li>
         <li>resume</li>
-        <li>neofetch</li>
+        {/* <li>neofetch</li> */}
         <li>clear</li>
       </ul>
       <ul>
-        <li>list out all the commands</li>
-        <li>about myself</li>
-        <li>list out projects I have worked on</li>
-        <li>redirect you to my resume</li>
-        <li>system information</li>
-        <li>clear screen</li>
+        <li>show available commands</li>
+        <li>get to know more about me</li>
+        <li>explore my professional journey</li>
+        <li>discover my skills and expertise</li>
+        <li>view my earned certificates</li>
+        <li>access my detailed resume</li>
+        {/* <li>display system information</li> */}
+        <li>clear the screen</li>
       </ul>
     </section>
   );
