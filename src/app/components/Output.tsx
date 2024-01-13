@@ -8,6 +8,16 @@ import Experience from "./commands/Experience";
 import Skills from "./commands/Skills";
 
 export default function Output({ command }: { command: string }) {
+  const commandsArray: string[] = [
+    "help",
+    "about",
+    "certificates",
+    "neofetch",
+    "skills",
+    "experience",
+    "repo",
+    "resume",
+  ];
   function handleRepoCase() {
     console.log("new link opens here");
   }
@@ -18,7 +28,11 @@ export default function Output({ command }: { command: string }) {
           shawshank@desktop<span className="text-white">:</span>:
           <span className="text-[#06989A]">~</span>
           <span className="mr-1.5 text-white">$</span>
-          <span className="text-cyan-500 ">{command}</span>
+          {commandsArray.includes(command) ? (
+            <span className="text-cyan-500">{command}</span>
+          ) : (
+            <span className="text-white">{command}</span>
+          )}
         </p>
       </p>
       {command && (
