@@ -14,7 +14,9 @@ export default function Help() {
           <li>skills</li>
           <li>certificates</li>
           <li>resume</li>
-          {/* <li>neofetch</li> */}
+          <li>blogs</li>
+          <li>repo</li>
+          <li>neofetch</li>
           <li>clear</li>
         </ul>
         <ul>
@@ -24,7 +26,9 @@ export default function Help() {
           <li>discover my skills and expertise</li>
           <li>view my earned certificates</li>
           <li>access my detailed resume</li>
-          {/* <li>display system information</li> */}
+          <li>view blogs by shashank ghimire on medium</li>
+          <li>go to github repo for this app</li>
+          <li>display system information</li>
           <li>clear the screen</li>
         </ul>
       </section>

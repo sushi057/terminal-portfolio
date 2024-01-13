@@ -50,7 +50,8 @@ export default function Terminal() {
           type="text"
           value={command}
           onChange={(e) => setCommand(e.target.value)}
-          className="ml-1.5 w-full bg-inherit text-[#D3D7CF] outline-none"
+          className="ml-1.5 w-full bg-inherit text-[#D3D7CF] outline-none focus:h-full"
+          autoFocus
         />
       </form>
     </div>
